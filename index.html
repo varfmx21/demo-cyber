@@ -3,87 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber-Insurance Readiness Platform</title>
+    <title>SecureShield - Cybersecurity Made Simple for Small Businesses</title>
+    <meta name="description" content="Protect your small business with automated cybersecurity assessments, compliance tools, and guided cyber insurance support.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🛡️ Cyber-Insurance Readiness Platform</h1>
-            <p class="subtitle">Assess your organization's cybersecurity posture</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🛡️ SecureShield</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn btn-outline">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main id="app">
-            <!-- Welcome Screen -->
-            <section id="welcome-screen" class="screen active">
-                <div class="welcome-content">
-                    <h2>Welcome to Your Security Assessment</h2>
-                    <p>This assessment will help you understand your organization's cybersecurity readiness and identify areas for improvement.</p>
-                    <div class="info-box">
-                        <h3>What to expect:</h3>
-                        <ul>
-                            <li>10 security-focused questions</li>
-                            <li>Personalized readiness score</li>
-                            <li>Tailored recommendations</li>
-                            <li>Estimated completion time: 5 minutes</li>
-                        </ul>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cybersecurity Protection Built for Small Businesses</h1>
+                <p class="hero-subtitle">Automated security assessments, compliance tools, and guided cyber insurance—all in one platform. Protect your business without the complexity.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
+                    <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+                <p class="hero-note">No credit card required • Setup in 5 minutes</p>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <div class="shield-icon">🛡️</div>
+                    <div class="security-badge">
+                        <span class="badge-label">Security Score</span>
+                        <span class="badge-score">95/100</span>
                     </div>
-                    <button id="start-btn" class="btn btn-primary">Start Assessment</button>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Questionnaire Screen -->
-            <section id="questionnaire-screen" class="screen">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need to Stay Protected</h2>
+                <p>Comprehensive cybersecurity tools designed for businesses without dedicated IT teams</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Automated Assessments</h3>
+                    <p>Continuous monitoring and automated security assessments that identify vulnerabilities before they become problems.</p>
                 </div>
-                <div class="question-counter">
-                    <span id="current-question">1</span> of <span id="total-questions">10</span>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Readiness Scoring</h3>
+                    <p>Get a clear picture of your security posture with easy-to-understand scores and actionable insights.</p>
                 </div>
-                <div id="question-container"></div>
-                <div class="navigation-buttons">
-                    <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
-                    <button id="next-btn" class="btn btn-primary">Next</button>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Compliance Tools</h3>
+                    <p>Stay compliant with industry standards and regulations. Automated compliance tracking and reporting.</p>
                 </div>
-            </section>
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Cyber Insurance Guidance</h3>
+                    <p>Step-by-step guidance to obtain cyber insurance coverage. We help you meet requirements and find the right policy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Real-time Alerts</h3>
+                    <p>Instant notifications for security threats and vulnerabilities, so you can respond quickly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Track your security improvements over time with detailed analytics and visual dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!-- Results Screen -->
-            <section id="results-screen" class="screen">
-                <div class="results-content">
-                    <h2>Your Readiness Assessment</h2>
-                    <div class="score-display">
-                        <div class="score-circle">
-                            <svg viewBox="0 0 200 200">
-                                <circle cx="100" cy="100" r="90" class="score-bg"></circle>
-                                <circle cx="100" cy="100" r="90" class="score-progress" id="score-circle"></circle>
-                            </svg>
-                            <div class="score-text">
-                                <span id="score-value">0</span>
-                                <span class="score-label">/ 100</span>
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Small Businesses Choose SecureShield</h2>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>No Technical Expertise Required</strong>
+                                <p>Our platform is designed for business owners, not IT professionals.</p>
                             </div>
-                        </div>
-                        <div class="score-rating" id="score-rating"></div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Affordable Protection</strong>
+                                <p>Enterprise-level security at small business prices.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Quick Setup</strong>
+                                <p>Get protected in minutes, not weeks.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Insurance-Ready</strong>
+                                <p>Meet cyber insurance requirements with confidence.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits-visual">
+                    <div class="stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
                     </div>
-                    
-                    <div class="recommendations">
-                        <h3>Recommended Actions</h3>
-                        <div id="recommendations-list"></div>
+                    <div class="stat-card">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Businesses Protected</div>
                     </div>
-
-                    <div class="action-buttons">
-                        <button id="restart-btn" class="btn btn-secondary">Retake Assessment</button>
-                        <button id="print-btn" class="btn btn-primary">Print Results</button>
+                    <div class="stat-card stat-card-full">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Monitoring</div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 Cyber-Insurance Readiness Platform. Demo Application.</p>
-        </footer>
-    </div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your business needs</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Monthly security assessments</li>
+                        <li>✓ Basic compliance tracking</li>
+                        <li>✓ Up to 10 users</li>
+                        <li>✓ Email support</li>
+                        <li>✓ Basic reporting</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Weekly security assessments</li>
+                        <li>✓ Advanced compliance tools</li>
+                        <li>✓ Up to 50 users</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Cyber insurance guidance</li>
+                        <li>✓ Custom integrations</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Real-time monitoring</li>
+                        <li>✓ Full compliance suite</li>
+                        <li>✓ Unlimited users</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ Custom reporting</li>
+                        <li>✓ On-premise options</li>
+                        <li>✓ SLA guarantees</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Business?</h2>
+                <p>Join thousands of small businesses that trust SecureShield for their cybersecurity needs.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
+                    <a href="#" class="btn btn-outline-light btn-lg">Schedule Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>🛡️ SecureShield</h4>
+                    <p>Cybersecurity protection made simple for small businesses.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SecureShield. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
