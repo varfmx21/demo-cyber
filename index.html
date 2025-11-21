@@ -1,89 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber-Insurance Readiness Platform</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🛡️ Cyber-Insurance Readiness Platform</h1>
-            <p class="subtitle">Assess your organization's cybersecurity posture</p>
-        </header>
-
-        <main id="app">
-            <!-- Welcome Screen -->
-            <section id="welcome-screen" class="screen active">
-                <div class="welcome-content">
-                    <h2>Welcome to Your Security Assessment</h2>
-                    <p>This assessment will help you understand your organization's cybersecurity readiness and identify areas for improvement.</p>
-                    <div class="info-box">
-                        <h3>What to expect:</h3>
-                        <ul>
-                            <li>10 security-focused questions</li>
-                            <li>Personalized readiness score</li>
-                            <li>Tailored recommendations</li>
-                            <li>Estimated completion time: 5 minutes</li>
-                        </ul>
-                    </div>
-                    <button id="start-btn" class="btn btn-primary">Start Assessment</button>
-                </div>
-            </section>
-
-            <!-- Questionnaire Screen -->
-            <section id="questionnaire-screen" class="screen">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
-                </div>
-                <div class="question-counter">
-                    <span id="current-question">1</span> of <span id="total-questions">10</span>
-                </div>
-                <div id="question-container"></div>
-                <div class="navigation-buttons">
-                    <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
-                    <button id="next-btn" class="btn btn-primary">Next</button>
-                </div>
-            </section>
-
-            <!-- Results Screen -->
-            <section id="results-screen" class="screen">
-                <div class="results-content">
-                    <h2>Your Readiness Assessment</h2>
-                    <div class="score-display">
-                        <div class="score-circle">
-                            <svg viewBox="0 0 200 200">
-                                <circle cx="100" cy="100" r="90" class="score-bg"></circle>
-                                <circle cx="100" cy="100" r="90" class="score-progress" id="score-circle"></circle>
-                            </svg>
-                            <div class="score-text">
-                                <span id="score-value">0</span>
-                                <span class="score-label">/ 100</span>
-                            </div>
-                        </div>
-                        <div class="score-rating" id="score-rating"></div>
-                    </div>
-                    
-                    <div class="recommendations">
-                        <h3>Recommended Actions</h3>
-                        <div id="recommendations-list"></div>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button id="restart-btn" class="btn btn-secondary">Retake Assessment</button>
-                        <button id="print-btn" class="btn btn-primary">Print Results</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Cyber-Insurance Readiness Platform. Demo Application.</p>
-        </footer>
-    </div>
-
-    <script src="data.js"></script>
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo-cyber</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
