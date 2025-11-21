@@ -87,7 +87,7 @@ const Features = () => {
               <div className="text-blue-200">Uptime Guarantee</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">&lt;5 min</div>
+              <div className="text-4xl font-bold mb-2">{'<'}5 min</div>
               <div className="text-blue-200">Setup Time</div>
             </div>
           </div>
