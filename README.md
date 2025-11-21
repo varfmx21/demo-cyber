@@ -1,40 +1,27 @@
-# 🛡️ Cyber-Insurance Readiness Platform
+# 🛡️ CyberShield - Modern SaaS Landing Page
 
-A simple, interactive web application that helps organizations assess their cybersecurity readiness through a comprehensive questionnaire, providing a readiness score and tailored security recommendations.
+A modern, professional cybersecurity SaaS landing page built with React, Vite, and Tailwind CSS. Designed to showcase automated cybersecurity solutions for small businesses.
 
 ## 🌟 Features
 
-- **Interactive Security Assessment**: 10 comprehensive security questions covering key cybersecurity domains
-- **Dynamic Scoring System**: Real-time score calculation based on user responses (0-100 scale)
-- **Personalized Recommendations**: Tailored action items based on assessment results with priority levels
-- **Clean & Modern UI**: Responsive design that works on desktop and mobile devices
-- **Visual Score Display**: Animated circular progress indicator showing readiness score
-- **Print-Friendly Results**: Export assessment results for documentation
-- **No Backend Required**: Fully functional front-end prototype with mock data
-
-## 📸 Screenshots
-
-### Welcome Screen
-![Welcome Screen](https://github.com/user-attachments/assets/9b3661d1-14b1-4d67-a80e-0150f0c2d06a)
-
-### Questionnaire
-![Questionnaire](https://github.com/user-attachments/assets/0c58dc04-f6a0-4567-9be5-2dab70e516df)
-
-### Results - High Score
-![Results High Score](https://github.com/user-attachments/assets/073da156-2486-4795-98f0-cf24a3258922)
-
-### Results - Low Score
-![Results Low Score](https://github.com/user-attachments/assets/4bcb7564-d642-4ada-ae81-a46a6849cc82)
-
-### Mobile View
-![Mobile Responsive](https://github.com/user-attachments/assets/0da40fde-ab8c-493c-a8fe-96524ebd8ca3)
+- **Modern Tech Stack**: Built with React (Vite) and Tailwind CSS
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop devices
+- **Professional Design**: Clean, modern interface with cybersecurity theme
+- **Hero Section**: Compelling headline with clear value proposition and CTAs
+- **Features Section**: Highlights key capabilities:
+  - Automated Assessments
+  - Readiness Scoring
+  - Compliance Tools
+  - Cyber Insurance Guidance
+- **Pricing Section**: Three-tier pricing plans (Basic, Pro, Enterprise)
+- **Footer**: Complete footer with links and copyright information
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- A local web server (optional, for local testing)
+- Node.js (v14 or higher)
+- npm or yarn
 
 ### Installation
 
@@ -44,128 +31,60 @@ A simple, interactive web application that helps organizations assess their cybe
    cd demo-cyber
    ```
 
-2. Open the application:
-   - **Option 1**: Simply open `index.html` in your web browser
-   - **Option 2**: Use a local web server:
-     ```bash
-     # Python 3
-     python3 -m http.server 8080
-     
-     # Python 2
-     python -m SimpleHTTPServer 8080
-     
-     # Node.js (if you have http-server installed)
-     npx http-server -p 8080
-     ```
-   - Then navigate to `http://localhost:8080` in your browser
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## 📋 Usage
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-1. **Start Assessment**: Click the "Start Assessment" button on the welcome screen
-2. **Answer Questions**: Select the most appropriate answer for each of the 10 security questions
-3. **Navigate**: Use "Next" and "Previous" buttons to move through questions
-4. **View Results**: After completing all questions, view your readiness score and recommendations
-5. **Take Action**: Review the prioritized recommendations based on your score
-6. **Retake or Print**: Optionally retake the assessment or print results for documentation
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 📋 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
 ## 🏗️ Project Structure
 
 ```
 demo-cyber/
-├── index.html      # Main HTML structure
-├── styles.css      # Styling and responsive design
-├── app.js          # Application logic and UI interactions
-├── data.js         # Mock data (questions and recommendations)
-└── README.md       # Project documentation
+├── src/
+│   ├── components/
+│   │   ├── Hero.jsx       # Hero section with headline and CTAs
+│   │   ├── Features.jsx   # Features/Benefits section
+│   │   ├── Pricing.jsx    # Pricing plans section
+│   │   └── Footer.jsx     # Footer with links
+│   ├── App.jsx            # Main app component
+│   ├── main.jsx           # App entry point
+│   └── index.css          # Tailwind CSS imports
+├── public/                # Static assets
+├── index.html             # HTML template
+├── package.json           # Dependencies
+├── vite.config.js         # Vite configuration
+└── tailwind.config.js     # Tailwind CSS configuration
 ```
-
-## 🔧 Technical Details
-
-### Architecture
-
-- **Modular Design**: Separation of concerns with distinct files for structure, styling, logic, and data
-- **Object-Oriented JavaScript**: Main application logic encapsulated in a `CyberReadinessApp` class
-- **Event-Driven**: Responsive UI updates based on user interactions
-- **State Management**: Internal state tracking for current question, answers, and scores
-
-### Security Assessment Categories
-
-1. Incident Response Planning
-2. Multi-Factor Authentication (MFA)
-3. Security Awareness Training
-4. Backup and Recovery
-5. Patch Management
-6. Network Segmentation
-7. Security Monitoring
-8. Vulnerability Assessment
-9. Data Encryption
-10. Vendor Risk Management
-
-### Scoring System
-
-- **Score Range**: 0-100
-- **Rating Categories**:
-  - 85-100: Excellent - Insurance Ready
-  - 70-84: Good - Strong Security Posture
-  - 50-69: Fair - Improvement Needed
-  - 0-49: Poor - Significant Gaps
-
-### Recommendation Priorities
-
-- **High Priority**: Critical security gaps requiring immediate attention
-- **Medium Priority**: Important improvements to strengthen security posture
-- **Low Priority**: Optimization and enhancement recommendations
 
 ## 🎨 Customization
 
-### Modifying Questions
+### Colors and Styling
 
-Edit `data.js` to add, remove, or modify security questions:
+The project uses Tailwind CSS for styling. You can customize colors and design in:
+- `tailwind.config.js` - Extend Tailwind's default theme
+- Component files - Modify Tailwind classes directly
 
-```javascript
-const QUESTIONS = [
-    {
-        id: 1,
-        question: "Your question here?",
-        options: [
-            { text: "Best answer", value: 10 },
-            { text: "Good answer", value: 7 },
-            { text: "Fair answer", value: 4 },
-            { text: "Poor answer", value: 0 }
-        ]
-    },
-    // Add more questions...
-];
-```
+### Content
 
-### Customizing Recommendations
-
-Modify the `RECOMMENDATIONS` object in `data.js` to tailor recommendations:
-
-```javascript
-const RECOMMENDATIONS = {
-    high: [
-        {
-            title: "Recommendation Title",
-            description: "Detailed description...",
-            priority: "high",
-            category: "category-name"
-        }
-    ]
-};
-```
-
-### Styling
-
-Modify `styles.css` to customize colors, fonts, and layout. CSS variables are defined at the top for easy theming:
-
-```css
-:root {
-    --primary-color: #2563eb;
-    --success-color: #10b981;
-    /* ... more variables */
-}
-```
+Update content in the respective component files:
+- `src/components/Hero.jsx` - Hero section content
+- `src/components/Features.jsx` - Features list and descriptions
+- `src/components/Pricing.jsx` - Pricing plans and features
+- `src/components/Footer.jsx` - Footer links and information
 
 ## 🌐 Browser Compatibility
 
@@ -181,12 +100,8 @@ This project is a demonstration application created for educational purposes.
 
 ## 🤝 Contributing
 
-This is a demo project. Feel free to fork and customize for your own use.
-
-## 📧 Contact
-
-For questions or feedback, please open an issue in the repository.
+Feel free to fork and customize for your own use.
 
 ---
 
-**Note**: This is a front-end prototype using mock data. For production use, integrate with a backend API for data persistence and advanced analytics.
+**Built with ❤️ using React, Vite, and Tailwind CSS**
