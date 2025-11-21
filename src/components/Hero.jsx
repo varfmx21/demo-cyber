@@ -2,7 +2,13 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-cyber-blue-900 via-cyber-blue-800 to-cyber-teal-900">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:30px_30px]" />
+      <div 
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}
+      />
       
       {/* Navigation */}
       <nav className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
